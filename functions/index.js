@@ -18,7 +18,7 @@ var messaging = getMessaging();
 const logging = new Logging();
 
 const debug = isDebug();
-const MAX_NOTIFICATIONS_PER_DAY = 500;
+const MAX_NOTIFICATIONS_PER_DAY = 999999;
 
 const region = functions.config().app && functions.config().app.region || "us-central1";
 const regionalFunctions = functions.region(region).runWith({ timeoutSeconds: 10 });
